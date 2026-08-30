@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light;
+  --paper: #f7f4ed;
+  --surface: #fffdf8;
+  --ink: #1f251f;
+  --green: #2e4736;
+  --time: #a66d21;
+  --line: #dcd6c8;
+  --muted: #626760;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  line-height: 1.72;
+}
+
+main {
+  width: min(760px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 64px 0 88px;
+}
+
+header {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 28px;
+  margin-bottom: 36px;
+}
+
+.brand {
+  color: var(--time);
+  font-size: 14px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(34px, 7vw, 54px);
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  margin: 38px 0 10px;
+  color: var(--green);
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  margin: 24px 0 6px;
+  font-size: 17px;
+}
+
+p,
+li {
+  font-size: 16px;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+.meta,
+.note {
+  color: var(--muted);
+}
+
+.card {
+  margin: 20px 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+}
+
+a {
+  color: var(--green);
+  font-weight: 650;
+  text-underline-offset: 3px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+footer {
+  margin-top: 48px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  color: #6d716b;
+  font-size: 14px;
+}
+
